@@ -170,6 +170,7 @@ public class RecyclerViewDataAdapter extends RecyclerView.Adapter<RecyclerViewDa
                 Intent intent = new Intent(context, ProductDetailActivity.class);
                 intent.putExtra("dealId", data.getDealId());
                 intent.putExtra("merchantId", data.getMerchantId());
+                intent.putExtra("shopId", data.getShopId());
                 context.startActivity(intent);
             }
         });
@@ -180,6 +181,7 @@ public class RecyclerViewDataAdapter extends RecyclerView.Adapter<RecyclerViewDa
                 Intent intent = new Intent(context, ProductDetailActivity.class);
                 intent.putExtra("dealId", data.getDealId());
                 intent.putExtra("merchantId", data.getMerchantId());
+                intent.putExtra("shopId", data.getShopId());
                 context.startActivity(intent);
             }
         });

@@ -235,6 +235,11 @@ public class WallFragment extends Fragment {
         if (id == R.id.action_search) {
             Log.v("Notification", "Search Selected");
         }
+        if (id == R.id.action_show_ir_list) {
+            Log.v("Notification", "Search Selected");
+            new GetAllDealTask().execute();
+
+        }
 
         return super.onOptionsItemSelected(item);
     }
